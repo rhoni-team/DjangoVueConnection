@@ -35,6 +35,7 @@ pip install -r requirements.txt
 ### _Install Vue dependencies_
 
 ```bash
+cd demo
 cd frontend
 npm install
 ```
@@ -49,7 +50,7 @@ In the first one, navigate to the `frontend` folder and run:
 npm run dev
 ```
 
-In the second terminal, navigate to the `django_vue_demo` folder and run:
+In the second terminal, with your Python environment activated, navigate to the `demo` folder and run:
 
 ```bash
 python manage.py migrate
