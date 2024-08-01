@@ -12,7 +12,7 @@ The code follows the tutorial from Rhoni's blog (insert the actual link [here](#
 For this project, you need to have `node` and `npm` installed on your computer. We recommend using the following versions:
 
 - node v21.7.2
-- npm v8.19.1
+- npm > 7
 
 If you already have other versions of Node.js installed, consider using `nvm` (Node Version Manager) to manage and switch between node versions.
 
