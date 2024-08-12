@@ -117,31 +117,31 @@ Visit http://127.0.0.1:8000/ in your browser. You should see a homepage displayi
 
 
 
-# Getting partial code of Django - Vue application
+# Getting partial code of the Django-Vue application
 
 ## How to install it
 
 ### _Clone a release_
 
-To install the code of **"Connecting Django with Vue and Vite for development"** tutorial, clone the release v1.0.
+To install the code for the **"Connecting Django with Vue and Vite for development"** tutorial, clone the `v1.0` release.
 
 ```bash
 git clone --branch v1.0 git@github.com:rhoni-team/DjangoVueConnection.git
 ```
 
-Or to install the code of **"Deploying Django and VueJs with Vite for Production"** tutorial clone the release v2.0.
+Or to install the code for the **"Deploying Django and VueJs with Vite for Production"** tutorial clone the `v2.0` release.
 
 ```bash
 git clone --branch v1.0 git@github.com:rhoni-team/DjangoVueConnection.git
 ```
 
 You could also download and uncompress the code of the corresponding release:
-- v1.0
-- v2.0
+- [v1.0](https://github.com/rhoni-team/DjangoVueConnection/releases/tag/v1.0)
+- [v2.0](https://github.com/rhoni-team/DjangoVueConnection/releases/tag/v2.0)
 
 ### _Install necessary dependencies_
 
-After cloning the project, you need to install the necessary dependencies for Python and Vue:
+After cloning the project, you will need to install the necessary dependencies for Python and Vue:
 
 1. [Create a Python environment and install Python Dependencies](#create-a-python-environment-and-install-python-dependencies)
 
@@ -150,6 +150,6 @@ After cloning the project, you need to install the necessary dependencies for Py
 
 ## How to run it
 
-Both releases can be started on development mode. To do this, follow the steps from the [Running in development mode](#running-in-development-mode) section.
+Both releases can be started on development mode. To do this, follow the steps outlined in the [Running in development mode](#running-in-development-mode) section.
 
-The v2.0 also is connected in production. To run it, follow the steps from the [Running in production mode](#running-in-production-mode) section.
+The `v2.0` release is also set up for production. To run it in production mode, follow the steps from the [Running in production mode](#running-in-production-mode) section.
