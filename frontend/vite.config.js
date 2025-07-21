@@ -1,18 +1,31 @@
-import { fileURLToPath, URL } from 'node:url'
+// DjangoVueConnection/frontend/vite.config.js
+
+import path from "node:path"; // add this import
+
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import vueDevTools from 'vite-plugin-vue-devtools'
 
-// https://vite.dev/config/
+
+// define this variables
+const INPUT_DIR = "./src";
+
+
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-    vueDevTools(),
-  ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    },
-  },
+ plugins: [
+   vue(),
+ ],
+ resolve: { // change the resolve.alias
+   alias: {
+     "@": path.resolve(INPUT_DIR),
+   },
+ },
+ root: path.resolve(INPUT_DIR),
+ base: "/static/",
+ server: {
+   origin: "http://localhost:3000",
+   host: "localhost",
+   port: 3000,
+ },
 })
