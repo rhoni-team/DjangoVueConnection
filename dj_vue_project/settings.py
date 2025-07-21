@@ -25,6 +25,11 @@ SECRET_KEY = 'django-insecure-q$3k%=18br==ehkehj5c1p__1-r5^zh8!i@m$4c%5_g^w9=y7+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# add the django vite configuration
+DJANGO_VITE_DEV_MODE = DEBUG
+# Using the same port as the dev port defined in vite.config.js
+DJANGO_VITE_DEV_SERVER_PORT = 3000
+
 ALLOWED_HOSTS = []
 
 
@@ -37,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_vite',
 ]
 
 MIDDLEWARE = [
@@ -114,7 +120,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+
+STATIC_ROOT = BASE_DIR / 'static'
+STATIC_URL = "static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
