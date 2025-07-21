@@ -1,4 +1,5 @@
 <script setup>
+import 'vite/modulepreload-polyfill'; // add this import
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 </script>
