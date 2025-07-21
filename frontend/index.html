@@ -1,13 +1,20 @@
+<! -- DjangoVueConnection/templates/index.html -->
+
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+{% load static %}
+{% load django_vite %}
+
+
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Django Vue Demo</title>
+   {% vite_hmr_client %}
+   {% vite_asset 'main.js'%}
+</head>
+<body>
+   <h1>this is Django</h1>
+   <div id="app"></div>
+</body>
 </html>
