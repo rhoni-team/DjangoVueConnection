@@ -1,0 +1,20 @@
+<! -- DjangoVueConnection/templates/index.html -->
+
+<!DOCTYPE html>
+{% load static %}
+{% load django_vite %}
+
+
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Django Vue Demo</title>
+   {% vite_hmr_client %}
+   {% vite_asset 'main.js'%}
+</head>
+<body>
+   <h1>this is Django</h1>
+   <div id="app"></div>
+</body>
+</html>
