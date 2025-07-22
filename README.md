@@ -64,7 +64,6 @@ pip install -r requirements.txt
 ### _Install Vue dependencies_
 
 ```bash
-cd demo
 cd frontend
 npm install
 ```
