@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_vite',
     'corsheaders',
+    'backend.apps.BackendConfig',
 ]
 
 MIDDLEWARE = [
