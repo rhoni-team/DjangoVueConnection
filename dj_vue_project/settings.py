@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-q$3k%=18br==ehkehj5c1p__1-r5^zh8!i@m$4c%5_g^w9=y7+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # add the django vite configuration
 DJANGO_VITE_DEV_MODE = DEBUG
