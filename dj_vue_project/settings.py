@@ -29,6 +29,10 @@ DEBUG = True
 DJANGO_VITE_DEV_MODE = DEBUG
 # Using the same port as the dev port defined in vite.config.js
 DJANGO_VITE_DEV_SERVER_PORT = 3000
+# Point the DJANGO_VITE_MANIFEST_PATH to manifest.json
+DJANGO_VITE_MANIFEST_PATH = BASE_DIR / 'frontend' / \
+'static' / 'dist' / '.vite' / 'manifest.json'
+
 
 ALLOWED_HOSTS = ["127.0.0.1"]
 CORS_ALLOW_ALL_ORIGINS = False
