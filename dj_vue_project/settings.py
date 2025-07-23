@@ -25,6 +25,12 @@ SECRET_KEY = 'django-insecure-q$3k%=18br==ehkehj5c1p__1-r5^zh8!i@m$4c%5_g^w9=y7+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+if DEBUG:
+   print(f"Django is running in development - DEBUG mode: {DEBUG}")
+else:
+   print(f"Django is running in production - DEBUG mode: {DEBUG}")
+
+
 # add the django vite configuration
 DJANGO_VITE_DEV_MODE = DEBUG
 # Using the same port as the dev port defined in vite.config.js
